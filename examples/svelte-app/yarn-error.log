@@ -1,0 +1,63 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js dev
+
+PATH: 
+  C:\Users\johnn\.cargo\bin;C:\Users\johnn\.rustup\toolchains\stable-x86_64-pc-windows-msvc\bin;C:\Program Files\Alacritty\;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Users\johnn\AppData\Local\Programs\Python\Python37-32;C:\Users\johnn\AppData\Local\Programs\Python\Python37-32\Scripts;C:\Program Files\PuTTY\;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Calibre2\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\dotnet\;C:\Program Files (x86)\GnuPG\bin;C:\Program Files\WireGuard\;C:\Program Files\gitui\bin\;C:\ProgramData\chocolatey\bin;;C:\Program Files (x86)\Streamlink\bin;C:\ProgramData\chocolatey\lib\mpv.install\tools;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Go\bin;C:\Users\johnn\AppData\Local\Mu\bin;C:\Users\johnn\.cargo\bin;C:\Users\johnn\AppData\Local\Microsoft\WindowsApps;C:\Users\johnn\AppData\Local\atom\bin;C:\Users\johnn\AppData\Local\Microsoft\WindowsApps;C:\Users\johnn\AppData\Local\hyper\app-3.0.2\resources\bin;C:\Users\johnn\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\johnn\Documents\Source Gmod;C:\Users\johnn\AppData\Roaming\npm;C:\Users\johnn\AppData\Local\Yarn\bin;C:\Users\johnn\AppData\Local\Keybase\;C:\Users\johnn\go\bin
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  14.17.6
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\johnn\Dev\tauri-plugin-mqtt\package.json: Unexpected string in JSON at position 406
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:310:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+      "name": "svelte-app",
+      "version": "1.0.0",
+      "scripts": {
+          "build": "rollup -c",
+          "dev": "rollup -c -w",
+          "start": "sirv public",
+          "validate": "svelte-check",
+          "tauri": "tauri"
+      },
+      "devDependencies": {
+          "@rollup/plugin-commonjs": "21.0.0",
+          "@rollup/plugin-node-resolve": "13.0.5",
+          "@rollup/plugin-typescript": "8.2.5",
+          "@tsconfig/svelte": "2.0.1",
+          "rollup": "2.58.0",
+          "rollup-plugin-css-only": "3.1.0",
+          "rollup-plugin-livereload": "2.0.5",
+          "rollup-plugin-svelte": "7.1.0",
+          "rollup-plugin-terser": "7.0.2",
+          "svelte": "3.43.1",
+          "svelte-check": "2.2.6",
+          "svelte-preprocess": "4.9.8",
+          "tslib": "2.3.1",
+          "typescript": "4.4.3",
+  		"@tauri-apps/cli": "^1.0.0-rc.0"
+  
+      },
+      "dependencies": {
+          "sirv-cli": "1.0.14",
+          "tauri-plugin-mqtt": "link:../../"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

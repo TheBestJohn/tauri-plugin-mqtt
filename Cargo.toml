@@ -1,0 +1,20 @@
+[package]
+name = "tauri-plugin-mqtt"
+version = "0.1.0"
+authors = [ "You" ]
+description = ""
+edition = "2021"
+rust-version = "1.57"
+exclude = ["/examples", "/webview-dist", "/webview-src", "node_modules"]
+
+[features]
+default = ["client"]
+client = ["dep:rumqttc"]
+broker = ["dep:rumqttd"]
+
+[dependencies]
+rumqttc = { version = "0.11.0", optional = true }
+rumqttd = { version = "0.10.0", optional = true }
+serde = "1.0.136"
+tauri = { version = "1.0.0-rc.5" }
+thiserror = "1.0.30"
